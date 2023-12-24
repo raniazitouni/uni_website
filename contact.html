@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a7d73f097.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--                  header section                   -->
+        <nav >
+            <div class="logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap fa-flip-horizontal fa-2xl" style="color: #ee1815;"></i></a>
+                <h3>Eduford</h3>
+            </div>
+             <div class="navbar " id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                 </ul>
+                 
+             </div>
+             <i class="fa-solid fa-bars"  onclick="showMenu()" ></i>
+        </nav>
+        <main>
+            <section class="banner">
+                <div class="btext">
+                    <h1>Contact Us</h1>
+                </div>
+            </section>
+            <section class="contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12923.494838381752!2d3.154301170320103!3d36.70956527007845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e522f3f317461%3A0x215c157a5406653c!2sEcole%20Nationale%20Sup%C3%A9rieure%20d&#39;Informatique%20(Ex.%20INI)!5e0!3m2!1sfr!2sdz!4v1689029973840!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="part2">
+                <div class="info">
+                    <div class="all">
+                        <i class="fa-solid fa-house fa-2xl"></i>
+                        <p>Xyz Road,Abc Building<br>Bangalore Kantararo in</p>
+                    </div>
+                    <div class="all">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                        <p>+1 0123456789<br>Monday to Saturday 10 Am to 6 Pm</p>
+                    </div>
+                    <div class="all">
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                        <p>info@easytutorialspro.com<br>Email us your query</p>
+                    </div>
+                </div>
+                <div>
+                    <form action="" method="post" class="form">
+                        <input type="text" placeholder="Enter your name" required class="in1">
+                        <input type="email" placeholder="Enter email adress" required class="in1">
+                        <input type="text" placeholder="Enter your subject " required class="in1">
+                        <input type="text" placeholder="Message" required class="in2">
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                </div>
+            </div>
+                
+            </section>
+            <section class="fix">
+                <footer class="footer">
+                    <div class="about">
+                        <h4>About Us</h4>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et omnis esse non facilis! Aperiam ipsum vero cumque, repellendus error eligendi aspernatur atque, culpa unde natus obcaecati facere soluta nam.</p>
+                    </div>
+                    <div class="socialmedia">
+                        <a><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                        <a><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </div>
+                    <div class="signature">
+                        <p>made with</p>
+                        <i class="fa-solid fa-heart"></i>
+                        <p>by easy toturials</p>
+                    </div>
+    
+                </footer>
+            </section>
+        </main>
+        
+        
+        
+
+   
+   <script>
+      var navlinks=document.getElementById("navlinks");
+      var home=document.querySelector(".main");
+      function showMenu(){
+           navlinks.style.right="0";
+           home.style.zIndex="-1";
+      }
+      function hideMenu(){
+           navlinks.style.right="-200px";
+           home.style.zIndex="1";
+      }
+     
+    
+   </script>
+</body>
+</html>
